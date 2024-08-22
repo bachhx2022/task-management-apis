@@ -145,7 +145,7 @@ export class AuthService {
     tokenId: string,
     user: UserEntity,
   ) {
-    const expiredAt = moment().add(1, 'day');
+    const expiredAt = moment().add(3, 'day');
 
     const payload: AccessTokenPayload = {
       rtid: refreshTokenId,
